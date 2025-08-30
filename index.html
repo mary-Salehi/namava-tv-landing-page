@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/fonts.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <title>Document</title>
+    <title>نماوا تی وی</title>
   </head>
   <body>
     <div class="container">
@@ -36,13 +36,13 @@
           </span>
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="">معرفی</a>
+              <a class="nav__link" href="#">معرفی</a>
             </li>
             <li class="nav__item">
-              <a href="">مشخصات</a>
+              <a class="nav__link" href="#">مشخصات</a>
             </li>
             <li class="nav__item">
-              <a href="">خرید</a>
+              <a class="nav__link" href="#">خرید</a>
             </li>
           </ul>
         </nav>
@@ -50,10 +50,10 @@
       <main>
         <section class="intro">
           <div class="device-introduction">
-            <div class="intro__device-image">
+            <div class="device-introduction__image">
               <img src="./images/namava-tv.png" alt="نماوا تی وی" />
             </div>
-            <div>
+            <div class="device-introduction__text">
               <h2 class="title">با خیال راحت فیلم و سریال ببینید!</h2>
               <p class="paragraph">
                 «نماوا تی‌وی» یکی از محصولات نماواست که با اتصال آن به تلویزیون،
@@ -66,8 +66,66 @@
               </p>
             </div>
           </div>
+          <div class="subscription">
+            <div class="subscription-tickets-container">
+              <div class="subscription-ticket">
+                <img src="/images/namava-subscription.png" alt="" />
+                <h3>یک سال اشتراک رایگان نماوا</h3>
+                <div class="price-container">
+                  <span class="price">300000</span>
+                  <span>تومان</span>
+                </div>
+              </div>
+              <div class="subscription-ticket">
+                <img src="/images/shatel-subscription.png" alt="" />
+                <h3>یک سال اشتراک رایگان شاتل</h3>
+                <div class="price-container">
+                  <span class="price">200000</span>
+                  <span>تومان</span>
+                </div>
+              </div>
+            </div>
+            <!-- package -->
+            <div class="package-container">
+              <div class="package">
+                <div class="package__row">
+                  <h3>
+                    قیمت نماوا تی‌وی
+                  </h3>
+                  <div>
+                    <span class="price">1500000</span>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="package__row">
+                  <div class="discount-container">
+                    <span class="discount">15%</span>
+                    <span class="discount-label">تخفیف</span>
+                  </div>
+                  <div>
+                    <span class="price discount-amount"></span>
+                    <span>تومان</span>
+                  </div>
+                </div>
+                <div class="package__row">
+                  <h3>قیمت برای شما</h3>
+                  <div>
+                    <span class="final-price"></span>
+                    <span>تومان</span>
+                  </div>
+                </div>
+              </div>
+              <!-- button -->
+              <a class="purchase-btn" href="#">
+                <span>خرید از</span>
+                <img src="./images/digikala.png" alt="آیکون دیجیکالا" />
+              </a>
+            </div>
+          </div>
         </section>
       </main>
     </div>
+
+    <script type="module" src="scripts/script.js"></script>
   </body>
 </html>
