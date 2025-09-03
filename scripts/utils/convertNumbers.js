@@ -1,7 +1,7 @@
 const farsiDigits = ["۰", "۱", "۲", "۳", "۴", "۵", "۶", "۷", "۸", "۹"];
 
 export function toPersianNumbersWithComma(n) {
-  const numWithCommas = numberWithCommas(n); // 1000,2343
+  const numWithCommas = numberWithCommas(n);
   const persianNumber = englishToPersianNumber(numWithCommas);
   return persianNumber;
 }
@@ -17,5 +17,5 @@ export function englishToPersianNumber(n) {
 export function persianToEnglishNumber(str) {
   return str
     .replace(/[۰-۹]/g, (d) => "۰۱۲۳۴۵۶۷۸۹".indexOf(d))
-    .replace(/,/g, ""); // remove commas
+    .replace(/,/g, "");
 }

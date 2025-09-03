@@ -1,4 +1,4 @@
-import { persianToEnglishNumber } from "./convertNumbers.js";
+import { persianToEnglishNumber, toPersianNumbersWithComma } from "./convertNumbers.js";
 import { englishToPersianNumber } from "./convertNumbers.js";
 
 export function calculateDiscount() {
@@ -21,7 +21,7 @@ export function calculateDiscount() {
 
   // Convert back to Persian with commas
   document.querySelector(".package .discount-amount").textContent =
-    englishToPersianNumber(discountAmount.toFixed(0));
+    toPersianNumbersWithComma(discountAmount);
   document.querySelector(".package .final-price").textContent =
-    englishToPersianNumber(finalPrice.toFixed(0));
+    toPersianNumbersWithComma(finalPrice);
 }
